@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home-bg {
+    background-image: url("../images/summer-day-by-sea.jpg");
+    background-size: 200%;
+    background-position: 25%;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+body, :root, div {
+    font-family: "Open Sans", sans-serif;
+}
+
+.logo {
+    font-family: "ADLaM Display", system-ui;
+}
+
+.h2 {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.text-highlighted {
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.3);
+    max-width: 80%;
+    padding: 1rem;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px)  {
+    .home-bg {
+        background-size: 115%;
+        background-position: 100% 30%;
+    }
+
+    .text-highlighted {
+        max-width: 40%;
+    }
+}
