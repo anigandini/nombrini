@@ -52,22 +52,23 @@ Clone the repo:
 ```bash
 git clone https://github.com/anigandini/nombrini.git
 cd nombrini/backend
+```
 Install dependencies:
-
-
+```bash
 composer install
 npm install
+```
 Create .env file:
-
+```bash
 cp .env.example .env
 php artisan key:generate
+```
 Run migrations and seeders (optional):
-
-
+```bash
 php artisan migrate --seed
+```
 Start dev servers:
-
-
+```bash
 php artisan serve
 npm run dev
 
